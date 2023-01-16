@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body class="body">
+    <header>
+      <nav class="navContainer">
+        <div class="navBar">
+          <h2 class="Tiendita">Tiendita</h2>
+          <div class="locationContainer carShop">
+            <div class="location">
+              <img class="inconMap" src="img/map-pin.svg" alt="map-pin" />
+              <label class="locationText"
+                >México City Marriott Reforma Hotel...</label
+              >
+            </div>
+            <figure class="rayita"></figure>
+            <button type="button" class="btn carShopIcon">
+              <img src="img/shop.svg" alt="carShopIcon" />
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="mainContainer">
+      <div class="banner">
+        <h2 class="bannerh2">
+          ¡Adquiere todos tus productos favoritos al mejor precio!
+        </h2>
+      </div>
+      <section class="containerOfertas Ofertas">
+        <h2>Ofertas</h2>
+        <div class="products cOfert"></div>
+      </section>
+      <section class="containerPopular" id="popular">
+        <h2>Lo Mas Popular</h2>
+        <div class="products popular1"></div>
+      </section>
+    </section>
+    <div class="bgModal">
+      <div class="modalContainer modal-close" id="modalContainer">
+        <div class="productDescription">
+          <button class="close">X</button>
+          <figure class="productImg">
+            <img src="img/aguacateg.png" alt="" />
+          </figure>
+          <div class="containerRight">
+            <h2>Aguacate Has</h2>
+            <p>$69.0 /kg</p>
+            <div class="ivaPeso">
+              <p>Precios con Iva incluido</p>
+              <p>
+                Peso aproximado por pieza, puede variar de acuerdo al peso real.
+              </p>
+            </div>
+            <div class="madurez">
+              <p>Seleciona la madurez que deseas</p>
+              <input type="text" placeholder="Por Elegir" class="inputModal" />
+              <div class="actions">
+                <div class="btnsA">
+                  <div class="addAndRest">
+                    <button type="button">-</button>
+                    <p>250g</p>
+                    <button type="button">+</button>
+                  </div>
+                  <button class="btn Agregar">Agregar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="containerSugerencias">
+          <h2>Productos Relacionados</h2>
+          <div class="products Sugerencias"></div>
+        </div>
+      </div>
+    </div>
+    <div class="bgSlideBar">
+      <div class="slideBar slideBar-close">
+        <div class="headerBar">
+          <p class="delivery">Entregar en:<p class="locationBar"> México City Marriott Reforma Hotel...</p></p>
+          <button class="close slideBarC">X</button>
+        </div>
+        <div class="containerBar">
+          <div class="cardBar">  
+            <img src="img/aguacate.png" alt="">
+            <div class="NameAndPrice">
+              <p class="Nombre">Aguacate</p>
+              <p class="precio">$17.48</p>
+            </div>
+            <div class="addAndRest">
+              <button type="button">-</button>
+              <p>250g</p>
+              <button type="button">+</button></div>
+          </div>
+          </div>
+          <div class="pagarContainer">
+            <div class="btnPagar"> 
+              <p>6</p>
+              <a href="pay.html">ir a pagar</a>
+              <p>250$</p>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js" ></script>
+  </body>
+</html>

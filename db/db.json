@@ -1,0 +1,171 @@
+{
+  "products": [
+    {
+      "nombre": "Limon con semilla",
+      "img": "../img/Limon.png",
+      "precio": 39.9,
+      "descuento": 32,
+      "conDescuento": 26.82,
+      "categoryId": 1,
+      "id": 1
+    },
+    {
+      "nombre": "Tomate",
+      "img": "../img/tomate.png",
+      "precio": 32.9,
+      "descuento": 32,
+      "conDescuento": 21.79,
+      "categoryId": 1,
+      "id": 2
+    },
+    {
+      "nombre": "Aguacate Hass",
+      "img": "../img/aguacate.png",
+      "precio": 69.9,
+      "descuento": 18,
+      "conDescuento": 59.8,
+      "id": 3,
+      "categoryId": 1
+    },
+    {
+      "nombre": "Nopal Limpio",
+      "img": "../img/nopal.png",
+      "precio": 29.9,
+      "descuento": 13,
+      "conDescuento": 25.8,
+      "id": 4,
+      "categoryId": 1
+    },
+    {
+      "nombre": "Tomate verde sin cascara",
+      "img": "../img/tomate-verde.png",
+      "precio": 24.9,
+      "descuento": 8,
+      "conDescuento": 22.89,
+      "id": 5,
+      "categoryId": 1
+    },
+    {
+      "nombre": "Coca-Cola Sin azucar",
+      "img": "../img/cocaCocola-sin-azucar.png",
+      "precio": 29,
+      "descuento": 7,
+      "conDescuento": 26,
+      "id": 6,
+      "categoryId": 1
+    },
+    {
+      "nombre": "Coca-Cola",
+      "img": "../img/cocaCola.png",
+      "precio": 14,
+      "descuento": 7,
+      "conDescuento": 12.9,
+      "id": 7,
+      "categoryId": 1
+    },
+    {
+      "nombre": "Mc Cormick Mayonesa",
+      "img": "../img/mc-cormick-mayonesa.png",
+      "precio": 48.5,
+      "popular": true,
+      "id": 8,
+      "categoryId": 2
+    },
+    {
+      "nombre": "Colgate Pasta Dental Triple Familiar 2 U",
+      "img": "../img/colgate.png",
+      "precio": 35.5,
+      "popular": true,
+      "id": 9,
+      "categoryId": 2
+    },
+    {
+      "nombre": "Huevos San Juan",
+      "img": "../img/huevos.png",
+      "precio": 37.5,
+      "popular": true,
+      "id": 10,
+      "categoryId": 2
+    },
+    {
+      "nombre": "Fabuloso Limpiador Antibacterial",
+      "img": "../img/fabuloso.png",
+      "precio": 28,
+      "conDescuento": 26,
+      "popular": true,
+      "id": 11,
+      "categoryId": 2
+    },
+    {
+      "nombre": "Coca-Cola",
+      "img": "../img/cocaCola.png",
+      "precio": 14,
+      "descuento": 7,
+      "conDescuento": 12.9,
+      "id": 12,
+      "categoryId": 2
+    }
+  ],
+  "categories": [
+    {
+      "nombre": "Ofertas",
+      "id": 1
+    },
+    {
+      "nombre": "Los más populares",
+      "id": 2
+    }
+  ],
+  "locaciones": [
+    {
+      "id": 1,
+      "Dirección": "Medellin",
+      "Municipio": "Bello"
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "Sabaneta",
+      "id": 2
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "Itagüí",
+      "id": 3
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "Envigado",
+      "id": 4
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "Guatapé",
+      "id": 5
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "San Carlos",
+      "id": 6
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "Rionegro",
+      "id": 7
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "La Estrella",
+      "id": 8
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "Marinilla",
+      "id": 9
+    },
+    {
+      "Dirección": "Medellin",
+      "Municipio": "Copacabana",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+@use 'variables';
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 260px;
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  .bannerh2 {
+    width: 80%;
+    height: 50px;
+    font-weight: 600;
+    font-size: 28px;
+    color: variables.$colorwhite;
+    text-align: center;
+  }
+}

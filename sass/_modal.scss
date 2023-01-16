@@ -1,0 +1,100 @@
+@use 'variables';
+@use 'mixins';
+
+.bgModal {
+  visibility: hidden;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: variables.$bgModal;
+}
+.modalContainer {
+  transition: transform 1s;
+  transform: translateY(0%);
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  position: absolute;
+  width: 80%;
+  height: 66%;
+  left: 149px;
+  top: 80px;
+  background: #fefefe;
+  border-radius: 16px;
+  .productDescription {
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    position: relative;
+    .close {
+      @include mixins.close;
+    }
+    .productImg {
+      width: 100%;
+      height: 450px;
+      img {
+        object-fit: cover;
+      }
+    }
+    .containerRight {
+      padding: 20px;
+      width: 100%;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h2 {
+        font-size: 32px;
+        margin-top: 20px;
+      }
+      > p {
+        font-weight: bolder;
+        font-size: 18px;
+      }
+      .ivaPeso {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .madurez {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        > p {
+          font-weight: bolder;
+        }
+        .inputModal {
+          padding: 10px;
+          border: 1px solid black;
+          height: 48px;
+          border-radius: 10px;
+          outline: none;
+        }
+
+        .actions {
+          .btnsA {
+            display: flex;
+            justify-content: space-between;
+            .addAndRest {
+              @include mixins.addAndRest;
+            }
+
+            .Agregar {
+              @include mixins.btnGreen(60%, 48px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.modal-close {
+  transform: translateY(-200%);
+}

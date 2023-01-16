@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@900&family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  background-color: #fafaf8;
+  padding: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.mainContainer {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.return {
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  line-height: 50px;
+  top: 20px;
+  left: 20px;
+  position: absolute;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 40px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: #332927;
+}
+
+.products {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  background-color: white;
+  width: 40%;
+  height: 80vh;
+}
+
+.card {
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  display: flex;
+  width: 100%;
+  height: 80px;
+}
+
+.NameAndPrice {
+  width: 40%;
+}
+
+.precio {
+  font-weight: 600;
+}
+.card img {
+  width: 60px;
+  height: 60px;
+}
+
+.addAndRest {
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  display: flex;
+}
+
+.addAndRest button {
+  padding: 0 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+  width: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: white;
+  height: 20px;
+}
+
+.payForm {
+  margin-top: 20px;
+  margin-right: 100px;
+  width: 400px;
+  height: 397px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.emailContainer {
+  display: block;
+  width: 100%;
+  height: 65px;
+}
+
+.emailContainer input {
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid #3c42571f;
+  height: 30px;
+}
+
+.infoC {
+  position: relative;
+  gap: 0px;
+  padding: 0px;
+  margin: 0;
+  height: 100px;
+  width: 100%;
+  display: inline-block;
+  flex-direction: column;
+}
+
+.infoAll .inputNumber {
+  outline: none;
+  border: 1px solid #3c42571f;
+  border-radius: 4px 4px 0 0;
+  height: 40px;
+  width: 100%;
+}
+
+.infoAll .inputDate {
+  outline: none;
+  border: 1px solid #3c42571f;
+  border-radius: 0 0 0 4px;
+  bottom: 6px;
+  width: 210px;
+  position: relative;
+  height: 40px;
+}
+
+.infoAll .inputCvc {
+  outline: none;
+  border: 1px solid #3c42571f;
+  border-radius: 0px 0px 4px 0px;
+  height: 40px;
+  top: 59px;
+  width: 190px;
+  position: absolute;
+}
+
+.btnG {
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: #0ac763;
+  height: 40px;
+  width: 100%;
+}
+
+.nombreContainer {
+  width: 100%;
+}
+.inputName {
+  border: 1px solid #3c42571f;
+  width: 100%;
+  height: 40px;
+}
+
+.btnG:hover {
+  background-color: rgba(10, 199, 98, 0.521);
+}
+
+.bgModal {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #33292780;
+}
+
+.modalContainer {
+  transition: transform 1s;
+  transform: translateY(0%);
+  transition: transform 1s;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  top: 100px;
+  left: 30%;
+  border-radius: 16px;
+  position: absolute;
+  width: 600px;
+  height: 490px;
+  background-color: white;
+}
+
+.modalContainer .btnG {
+  line-height: 40px;
+  height: 40px;
+  text-align: center;
+  text-decoration: none;
+  width: 40%;
+}
+
+.hidden {
+  transform: translateY(-130%);
+  /* visibility: hidden; */
+}
+
+.modal-close {
+  transform: translateY(-200%);
+}

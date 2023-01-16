@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/pay.css" />
+  </head>
+  <body>
+    <main class="mainContainer">
+        <a href="index.html" class="return"><</a>
+      <section class="products">
+       <div class="card">
+         <img src="img/aguacate.png" alt="">
+         <div class="NameAndPrice">
+           <p class="Nombre">Aguacate</p>
+           <p class="precio">$17.48</p>
+       </div>
+       <div class="addAndRest">
+        <button type="button">-</button>
+        <p>250g</p>
+        <button type="button">+</button></div>
+      </section>
+        <section class="payForm">
+            <div class="emailContainer">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email">
+            </div>
+            <div class="infoC">
+                <label for="">Información de la tarjeta</label>
+                <div class="infoAll">
+                <input
+                class="inputNumber"
+                type="text"
+                name="Cardnumber"
+                id="Cardnumber"
+                maxlength="19"
+                placeholder="1234 5678 9123 0000">
+                    <input  
+                    class="inputDate"
+                    type="text"
+                    name="moth_year"
+                    id="inputMonth"
+                    maxlength="5"
+                    placeholder="MM / YY">
+                    <input 
+                    class="inputCvc"
+                    type="text"
+                    name="cvc"
+                    id="inputCvc"
+                    maxlength="3"
+                    placeholder="CVC">
+                </div>
+               
+            </div>
+            <div class="nombreContainer">
+                <label for="">Nombre De la tarjeta</label>
+                <input  class="
+                inputName"
+                type="text"
+                name="Cardholder"
+                id="Cardholder"
+                maxlength="20">
+            </div>
+            <button class="btnG Pagar">Pagar 244$</button>
+            </section>
+      </section>
+    </main>
+    <section class="bgModal hidden">
+        <div class="modalContainer modal-close">
+            <img src="img/Hands.png" alt="">
+            <h2 class="thanks">¡Gracias por tu compra!</h2>
+            <a href="index.html" class="btnG">Segir comprando</a>
+        </div>
+    </section>
+    <script src="js/pay.js"></script>
+  </body>
+</html>

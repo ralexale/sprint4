@@ -1,0 +1,97 @@
+@use 'variables';
+
+@mixin containerProducts($width: 100%, $height: 600px) {
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+  width: $width;
+  height: $height;
+  background-color: white;
+  padding: 40px;
+}
+
+@mixin btnGreen($width, $height: auto) {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: variables.$bgButtom;
+  width: $width;
+  height: $height;
+}
+@mixin card($height: 460px, $imgWidht: 250px, $imgHeight: 40%) {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: $height;
+  .porcentaje {
+    margin-bottom: 50px;
+    font-weight: 600;
+    color: variables.$purplecolor;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    width: 80px;
+    height: 28px;
+    text-align: center;
+    padding: 4px;
+    background-color: variables.$porcentajeblue;
+  }
+  img {
+    width: 250px;
+    height: 40%;
+    margin-bottom: 40px;
+    object-fit: contain;
+  }
+  .precio {
+    color: variables.$precioBrow;
+    font-weight: 700;
+    .precioDescartado {
+      color: variables.$graycolor;
+      font-style: unset;
+      font-weight: 600;
+      text-decoration: line-through;
+    }
+  }
+  .descripcion {
+    margin-top: 5px;
+    height: 80px;
+  }
+}
+
+@mixin addAndRest {
+  border-radius: 10px;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  display: flex;
+  button {
+    padding: 0 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    width: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: white;
+    height: 20px;
+  }
+}
+
+@mixin close {
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  color: white;
+  background-color: variables.$precioBrow;
+  top: 0;
+  right: 0;
+  position: absolute;
+}
